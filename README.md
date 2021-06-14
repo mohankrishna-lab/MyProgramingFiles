@@ -1,2 +1,2 @@
 # hi
-# This repository stores some of my programming files.
+# This repository stores some of my written programs
