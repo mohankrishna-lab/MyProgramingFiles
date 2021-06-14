@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+class PrimeNumbers
+{
+	public static void main(String[] args) 
+	{
+		int num = readNum();
+		if (num <= 1)
+		{
+			System.out.println("is neither prime nor not prime");
+		}
+		else
+		{
+			int pCount=0;
+			int nPCount=0;
+		for (int i = 2;i <= num ;i++ )
+		{
+			if (isPrime(i))
+			{
+
+				System.out.println(i + " is a prime");
+				pCount++;
+			}
+			else
+			{
+				System.out.println(i + " is not a prime");
+				nPCount++;
+			}
+		}
+		System.out.println(pCount);
+		System.out.println(nPCount);
+		}
+	}
+
+	public static int readNum()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter upto how many numbers to check prime or not");
+		return sc.nextInt();
+	}
+
+
+	public static boolean isPrime(int num)
+	{
+		for (int i = 2;i < num ;i++ )
+		{
+			if (num % i == 0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+}

@@ -1,0 +1,13 @@
+class Program2 
+{
+	public static void main(String[] args) 
+	{
+		int a=30;
+		int b=20;
+		int c;
+		c=1/4*(a*b);
+		System.out.print(c);
+
+		
+	}
+}

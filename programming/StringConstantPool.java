@@ -1,0 +1,48 @@
+class StringConstantPool 
+{
+	public static void main(String[] args) 
+	{
+		twoObjects();
+		twoStrings();
+		xyzPrint();
+	}
+
+	public static void twoObjects()
+	{
+		String one = new String("Hello");
+		String two = new String("Hello");
+
+		if (one == two)
+		{
+			System.out.println("equal");
+		}
+		else
+		{
+			System.out.println("not equal");
+		}
+	}
+
+	public static void twoStrings()
+	{
+		String one = "Hello";
+		String two = "Hello";
+
+		if (one == two)
+		{
+			System.out.println("equal");
+		}
+		else
+		{
+			System.out.println("not equal");
+		}
+	}
+
+	public static void xyzPrint()
+	{
+		String x = "xyz";
+		x = x.toUpperCase();
+		String y = x.replace('Y','y');
+		y = y + "abc";
+		System.out.println(y);
+	}
+}

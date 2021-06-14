@@ -1,0 +1,38 @@
+class SortingArray 
+{
+	public static void main(String[] args) 
+	{
+		int[] num = {9 , 5 , 3 , 4 ,7 , 1};
+
+		sortArray(num);
+	}
+
+	public static void sortArray(int[] num)
+	{
+		int[] a = new int[num.length];
+		int k = 0;
+
+		for (int j = 0;j < num.length ;j++ )
+		{
+			int smallest = 0;
+			
+				for (int i = 0;i < num.length ;i++ )
+				{
+					if (smallest == 0)
+					{
+						smallest = num[i];
+					}
+					else if (smallest > num[i] && num[i] != 200000)
+					{
+						smallest = num[i];
+						num[i] = 200000;
+					}
+				}
+				a[k++] = smallest;
+		}
+		for (int i = 0;i < a.length ;i++ )
+		{
+			System.out.println(a[i]);
+		}	
+	}
+}

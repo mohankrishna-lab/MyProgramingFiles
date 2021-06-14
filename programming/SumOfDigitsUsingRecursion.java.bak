@@ -1,0 +1,19 @@
+class SumOfDigitsUsingRecursion
+{
+	public static void main(String[] args) 
+	{
+		int sum = sod(456);
+	}
+
+	public static int sod(int num)
+	{
+		if (num <=0)
+		{
+			return 0;
+		}
+		else
+		{
+			return num % 10 + sod(num / 10);
+		}
+	}
+}

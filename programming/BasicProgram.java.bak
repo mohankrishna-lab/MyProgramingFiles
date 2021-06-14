@@ -1,0 +1,13 @@
+class BasicProgram 
+{
+	public static void main(String[] args) 
+	{
+		int i = 1;
+		for (System.out.println("hello");i <= 5 ;System.out.println("world") )
+		{
+			System.out.println(i);
+			i++;
+		}
+		System.out.println(i);
+	}
+}
